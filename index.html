@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Landing Page</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: lightblue;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: url('restaurant-image.jpg') no-repeat center center/cover;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: lightblue;
+      border: none;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #3399cc;
+    }
+
+    /* Restaurant Overview */
+    .overview {
+      padding: 60px 20px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+
+    .overview h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .overview p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .testimonials {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    .testimonial {
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    .testimonial span {
+      font-weight: bold;
+    }
+
+    /* Contact Us Section */
+    .contact {
+      padding: 60px 20px;
+      background-color: #3399cc;
+      color: white;
+    }
+
+    .contact h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 15px;
+      font-size: 1.2em;
+      color: white;
+      background-color: black;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 20px;
+    }
+
+    footer p {
+      font-size: 1.1em;
+      color: #333;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2em;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+      }
+
+      .overview h2 {
+        font-size: 2em;
+      }
+
+      .testimonials {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.png" alt="Restaurant Logo">
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#contact">Contact</a>
+      <a href="#login">Login</a>
+      <a href="#cart">My Cart</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>OPEN FOR DELIVERY & PICK UP</h1>
+    <p>GET IT WHILE IT'S HOT</p>
+    <button onclick="window.location.href='#menu'">Order Now</button>
+  </section>
+
+  <!-- Restaurant Overview -->
+  <section class="overview">
+    <h2>Welcome to Our Restaurant!</h2>
+    <p>We offer a variety of delicious dishes that are perfect for any occasion. From classic comfort food to international delicacies, we've got something for everyone.</p>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p>"Amazing food and great service!"</p>
+        <span>- John Doe</span>
+      </div>
+      <div class="testimonial">
+        <p>"A great experience, highly recommended."</p>
+        <span>- Jane Smith</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Restaurant Name | Address: 123 Main Street, City, Country</p>
+  </footer>
+
+</body>
+</html>

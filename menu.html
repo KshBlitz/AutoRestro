@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">Restaurant Logo</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">My Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu Categories Button -->
+    <div class="menu-categories-btn" onclick="toggleCategories()">
+        <span>Categories</span>
+    </div>
+
+    <!-- Menu Categories (Floating) -->
+    <div class="menu-categories" id="categories">
+        <ul>
+            <li><a href="#starters">Starters</a></li>
+            <li><a href="#rice">Rice</a></li>
+            <li><a href="#veg-main">Veg Main Course</a></li>
+            <li><a href="#non-veg-main">Non-Veg Main Course</a></li>
+            <li><a href="#breads">Breads</a></li>
+        </ul>
+    </div>
+
+    <!-- Menu Items -->
+
+    <section class="menu-section" id="starters">
+        <h2>Starters</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/paneer-chilli.jpg" alt="Paneer Chilli">
+                <h3>Paneer Chilli</h3>
+                <p>Spicy and crispy paneer dish.</p>
+                <p class="price">₹199</p>
+                <button class="add-to-cart" data-item="Paneer Chilli" data-price="199">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/manchurian.jpg" alt="Manchurian">
+                <h3>Manchurian</h3>
+                <p>Crispy fried balls in spicy gravy.</p>
+                <p class="price">₹149</p>
+                <button class="add-to-cart" data-item="Manchurian" data-price="149">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/veg-65.jpg" alt="Veg 65">
+                <h3>Veg 65</h3>
+                <p>Deep-fried crispy mixed vegetables.</p>
+                <p class="price">₹169</p>
+                <button class="add-to-cart" data-item="Veg 65" data-price="169">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/paneer-65.jpg" alt="Paneer 65">
+                <h3>Paneer 65</h3>
+                <p>Spicy paneer deep-fried to perfection.</p>
+                <p class="price">₹199</p>
+                <button class="add-to-cart" data-item="Paneer 65" data-price="199">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="rice">
+        <h2>Rice</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/plain-rice.jpg" alt="Plain Rice">
+                <h3>Plain Rice</h3>
+                <p>Simple and fluffy steamed rice.</p>
+                <p class="price">₹99</p>
+                <button class="add-to-cart" data-item="Plain Rice" data-price="99">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/jeera-rice.jpg" alt="Jeera Rice">
+                <h3>Jeera Rice</h3>
+                <p>Rice flavored with cumin and spices.</p>
+                <p class="price">₹129</p>
+                <button class="add-to-cart" data-item="Jeera Rice" data-price="129">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/veg-pulao.jpg" alt="Veg Pulao">
+                <h3>Veg Pulao</h3>
+                <p>Flavored rice with mixed vegetables.</p>
+                <p class="price">₹159</p>
+                <button class="add-to-cart" data-item="Veg Pulao" data-price="159">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="veg-main">
+        <h2>Veg Main Course</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/veg-kadhai.jpg" alt="Veg Kadhai">
+                <h3>Veg Kadhai</h3>
+                <p>Mixed vegetables cooked in a tangy gravy.</p>
+                <p class="price">₹229</p>
+                <button class="add-to-cart" data-item="Veg Kadhai" data-price="229">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/paneer-masala.jpg" alt="Paneer Masala">
+                <h3>Paneer Masala</h3>
+                <p>Cottage cheese in spicy tomato gravy.</p>
+                <p class="price">₹249</p>
+                <button class="add-to-cart" data-item="Paneer Masala" data-price="249">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/dal-tadka.jpg" alt="Dal Tadka">
+                <h3>Dal Tadka</h3>
+                <p>Yellow lentils tempered with ghee and spices.</p>
+                <p class="price">₹179</p>
+                <button class="add-to-cart" data-item="Dal Tadka" data-price="179">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="non-veg-main">
+        <h2>Non-Veg Main Course</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/chicken-handi.jpg" alt="Chicken Handi">
+                <h3>Chicken Handi</h3>
+                <p>Chicken cooked in a rich and spicy gravy.</p>
+                <p class="price">₹299</p>
+                <button class="add-to-cart" data-item="Chicken Handi" data-price="299">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/butter-chicken.jpg" alt="Butter Chicken">
+                <h3>Butter Chicken</h3>
+                <p>Delicious chicken cooked in creamy tomato gravy.</p>
+                <p class="price">₹349</p>
+                <button class="add-to-cart" data-item="Butter Chicken" data-price="349">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/mutton-masala.jpg" alt="Mutton Masala">
+                <h3>Mutton Masala</h3>
+                <p>Succulent mutton pieces cooked in a spicy gravy.</p>
+                <p class="price">₹399</p>
+                <button class="add-to-cart" data-item="Mutton Masala" data-price="399">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu-section" id="breads">
+        <h2>Breads</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="images/tandoori-roti.jpg" alt="Tandoori Roti">
+                <h3>Tandoori Roti</h3>
+                <p>Soft and crispy bread baked in a tandoor.</p>
+                <p class="price">₹49</p>
+                <button class="add-to-cart" data-item="Tandoori Roti" data-price="49">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/wheat-roti.jpg" alt="Wheat Roti">
+                <h3>Wheat Roti</h3>
+                <p>Healthy wheat-based flatbread.</p>
+                <p class="price">₹39</p>
+                <button class="add-to-cart" data-item="Wheat Roti" data-price="39">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/chapati.jpg" alt="Chapati">
+                <h3>Chapati</h3>
+                <p>Soft and light unleavened bread.</p>
+                <p class="price">₹29</p>
+                <button class="add-to-cart" data-item="Chapati" data-price="29">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/naan.jpg" alt="Naan">
+                <h3>Naan</h3>
+                <p>Fluffy and soft oven-baked bread.</p>
+                <p class="price">₹59</p>
+                <button class="add-to-cart" data-item="Naan" data-price="59">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/butter-naan.jpg" alt="Butter Naan">
+                <h3>Butter Naan</h3>
+                <p>Soft naan brushed with butter.</p>
+                <p class="price">₹79</p>
+                <button class="add-to-cart" data-item="Butter Naan" data-price="79">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Notification -->
+    <div id="cart-notification" class="cart-notification">
+        <p><span id="cart-count">0</span> Items in Cart | ₹<span id="cart-total">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

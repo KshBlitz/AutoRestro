@@ -1,0 +1,153 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Menu Categories Button */
+.menu-categories-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-categories-btn span {
+    font-size: 16px;
+    color: black;
+}
+
+/* Menu Categories (Floating) */
+.menu-categories {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.menu-categories ul {
+    list-style: none;
+}
+
+.menu-categories ul li {
+    margin-bottom: 10px;
+}
+
+.menu-categories ul li a {
+    text-decoration: none;
+    color: lightblue;
+    font-size: 16px;
+}
+
+/* Menu Items */
+.menu-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: gray;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.menu-item .add-to-cart {
+    background-color: lightblue;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Cart Notification */
+.cart-notification {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+
+    .menu-items {
+        display: block;
+    }
+}
