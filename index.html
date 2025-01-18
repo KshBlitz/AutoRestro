@@ -1,93 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Landing</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Landing</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">Restaurant</div>
-        <nav>
-            <ul>
-                <li><a href="landing.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="booking.html">Booking</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Welcome to Our Restaurant</h1>
-            <p>Indulge in the finest culinary experience, where every meal is a delight.</p>
-        </div>
-    </section>
-
-    <!-- Customer Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <p>"Absolutely loved the food! The service was excellent too. Highly recommend!"</p>
-            <h3>- John Doe</h3>
-        </div>
-        <div class="testimonial">
-            <p>"A delightful experience. The ambiance and food were top-notch!"</p>
-            <h3>- Jane Smith</h3>
-        </div>
-        <div class="testimonial">
-            <p>"I keep coming back for the amazing flavors and exceptional service. A must-visit!"</p>
-            <h3>- Mark Lee</h3>
-        </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section class="contact-us">
-        <h2>Contact Us</h2>
-        <form id="contact-form">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <div id="form-status"></div>
-    </section>
-
-    <!-- Newsletter Subscription Section -->
-    <section class="newsletter">
-        <h2>Subscribe to Our Newsletter</h2>
-        <input type="email" id="newsletter-email" placeholder="Enter your email">
-        <button id="subscribe-btn">Subscribe</button>
-    </section>
-
-       <!-- Footer Section -->
-<footer>
-  <div class="footer-content">
-      <div class="footer-logo">
-          <span>Restaurant</span>
-      </div>
-      <div class="footer-nav">
-          <ul>
-              <li><a href="privacy.html">Privacy Policy</a></li>
-              <li><a href="terms.html">Terms of Service</a></li>
-              <li><a href="faq.html">FAQ</a></li>
-          </ul>
-      </div>
-      <div class="footer-socials">
-          <a href="#" target="_blank" class="social-link">Facebook</a>
-          <a href="#" target="_blank" class="social-link">Instagram</a>
-          <a href="#" target="_blank" class="social-link">Twitter</a>
-      </div>
-      <p>&copy; 2025 Restaurant. All Rights Reserved.</p>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Restaurant Logo" class="logo-img"></a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html">My Cart</a> <!-- Fixed issue here -->
+    </div>
   </div>
-</footer>
 
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <div class="hero-text">
+      <h1>Welcome to Our Restaurant</h1>
+      <h2>Delicious food, exceptional service.</h2>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Restaurant Overview -->
+  <div class="restaurant-overview">
+    <h2>Our Story</h2>
+    <p>We offer the best cuisine prepared with love and passion. Come experience a taste of excellence!</p>
+  </div>
+
+  <!-- Testimonials -->
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"Absolutely wonderful food, friendly staff, and cozy atmosphere."</p>
+      <span>- John Doe</span>
+    </div>
+    <div class="testimonial">
+      <p>"A truly delightful experience. Will definitely return!"</p>
+      <span>- Jane Smith</span>
+    </div>
+  </div>
+
+  <!-- Contact Us Section -->
+  <div class="contact-us">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" class="form-input" placeholder="Your Name">
+      <input type="email" class="form-input" placeholder="Your Email">
+      <textarea class="form-textarea" placeholder="Your Message"></textarea>
+      <button class="form-btn">Send Message</button>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <div class="newsletter">
+    <h3>Subscribe to our Newsletter</h3>
+    <form class="newsletter-form">
+      <input type="email" class="form-input" placeholder="Enter your email">
+      <button type="submit" class="form-btn">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Restaurant Name. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
