@@ -1,0 +1,164 @@
+/* General Styles for Menu Page */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1e3a5f; /* Dark blue background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevent overflow */
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #b0d7ff;
+}
+
+/* Menu Section */
+.menu-section {
+  padding: 120px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.menu-section h2 {
+  font-size: 2.5rem;
+  color: #1e3a5f;
+  margin-bottom: 30px;
+}
+
+/* Flexbox for menu-items */
+.menu-items {
+  display: flex;
+  flex-wrap: wrap; /* This allows the items to wrap into multiple rows if necessary */
+  justify-content: space-evenly; /* Distribute the items evenly across the row */
+  gap: 20px; /* Space between the cards */
+  margin-top: 20px;
+}
+
+/* Menu Category */
+.menu-category {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.menu-category h3 {
+  font-size: 2rem;
+  color: #1e3a5f;
+  margin-bottom: 15px;
+}
+
+/* Menu Item Card */
+.menu-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Three cards per row */
+  box-sizing: border-box;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.menu-card-content {
+  margin-top: 15px;
+}
+
+.menu-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu-card-price {
+  font-size: 1rem;
+  color: #4f6d8a;
+  margin-top: 5px;
+}
+
+.menu-card-description {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+  .menu-card {
+    width: calc(50% - 20px); /* Two cards per row */
+  }
+
+  .menu-category h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu-card {
+    width: calc(100% - 20px); /* One card per row */
+  }
+
+  .menu-category h3 {
+    font-size: 1.6rem;
+  }
+}

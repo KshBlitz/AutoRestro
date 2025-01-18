@@ -4,27 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Menu</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Restaurant Menu</h1>
-      <button onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
-    </header>
 
-    <section>
-      <h2>Menu Items</h2>
-      <div id="menu-items">
-        <!-- Menu items will be displayed here -->
-      </div>
-    </section>
-
-    <footer class="footer">
-      <p>&copy; 2025 Restaurant</p>
-    </footer>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="index.html" class="logo"><img src="images/logo.png" alt="Restaurant Logo" class="logo-img"></a>
+    <div class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login / Table Number</a>
+      <a href="checkout.html">My Cart</a>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Menu Section -->
+  <section class="menu-section">
+    <h2>Our Menu</h2>
+    <div class="menu-cards" id="menu-items">
+      <!-- Menu items will be injected by JavaScript here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Restaurant</p>
+      <p>123 Food Street, Flavor Town</p>
+    </div>
+  </footer>
+
+  <script src="js/menu.js"></script>
 </body>
 </html>
