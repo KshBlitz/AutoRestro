@@ -1,9 +1,9 @@
-/* Global styles */
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f9f9f9;
 }
 
 /* Header */
@@ -11,7 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: lightblue;
+    background-color: #333;
+    color: white;
 }
 
 header .logo {
@@ -21,133 +22,260 @@ header .logo {
 
 header nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-size: 18px;
 }
 
-/* Menu Categories Button */
-.menu-categories-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: lightblue;
+/* Hero Section */
+.hero {
+    background-image: url('images/restaurant-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin: 20px 0;
+    font-style: italic;
+}
+
+.testimonial h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* Contact Us Section */
+.contact-us {
+    background-color: #f3f3f3;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input,
+#contact-form textarea {
     padding: 10px;
-    border-radius: 50%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#contact-form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.menu-categories-btn span {
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.newsletter input {
+    padding: 10px;
     font-size: 16px;
-    color: black;
+    margin-right: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
 }
 
-/* Menu Categories (Floating) */
-.menu-categories {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    display: none;
-    padding: 15px;
-    border-radius: 8px;
+.newsletter button {
+    padding: 10px;
+    background-color: #f9a825;
+    border: none;
+    cursor: pointer;
 }
 
-.menu-categories ul {
+.newsletter button:hover {
+    background-color: #f57f17;
+}
+
+/* Form Status */
+#form-status {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.menu-categories ul li {
-    margin-bottom: 10px;
+.footer-nav ul li {
+    margin: 0 15px;
 }
 
-.menu-categories ul li a {
+.footer-nav ul li a {
     text-decoration: none;
-    color: lightblue;
+    color: white;
     font-size: 16px;
 }
 
-/* Menu Items */
-.menu-section {
-    padding: 50px;
-    background-color: #f9f9f9;
+.footer-nav ul li a:hover {
+    text-decoration: underline;
 }
 
+.footer-socials {
+    margin-bottom: 20px;
+}
+
+.footer-socials .social-link {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.footer-socials .social-link:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+/* Menu */
 .menu-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 20px;
 }
 
 .menu-item {
-    background-color: white;
+    width: 250px;
+    border: 1px solid #ccc;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    border-radius: 8px;
 }
 
 .menu-item img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+    height: auto;
 }
 
-.menu-item h3 {
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.menu-item p {
-    font-size: 14px;
-    color: gray;
-}
-
-.menu-item .price {
-    font-size: 18px;
-    color: green;
-    font-weight: bold;
-}
-
-.menu-item .add-to-cart {
+.menu-item button {
     background-color: lightblue;
-    border: none;
     padding: 10px;
-    margin-top: 10px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-/* Cart Notification */
 .cart-notification {
     position: fixed;
-    bottom: 80px;
-    right: 20px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
     background-color: lightgreen;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: none;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    header nav ul {
-        display: block;
-        text-align: center;
-    }
+/* Checkout */
+.cart-items {
+    padding: 20px;
+}
 
-    .menu-items {
-        display: block;
-    }
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.order-total {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.primary-btn {
+    padding: 15px;
+    background-color: lightblue;
+    cursor: pointer;
 }
