@@ -4,37 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Checkout</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Checkout</h1>
-    </header>
-
-    <section class="cart-summary">
-      <h2>Order Summary</h2>
-      <ul id="cart-items">
-        <!-- Cart items will be displayed here -->
-      </ul>
-      <p id="total-price">Total: $0</p>
-    </section>
-
-    <section>
-      <h2>User Details</h2>
-      <form>
-        <input type="text" placeholder="Name" required>
-        <input type="text" placeholder="Phone Number" required>
-        <input type="text" placeholder="Table Number" value="Table 1" disabled>
-        <button type="submit">Place Order</button>
-      </form>
-    </section>
-
-    <footer class="footer">
-      <p>&copy; 2025 Restaurant</p>
-    </footer>
-  </div>
-
-  <script src="script.js"></script>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  <main>
+    <div id="cart-container" class="cart-container"></div>
+    <div id="total-container" class="total-container"></div>
+  </main>
+  <script src="js/checkout.js"></script>
 </body>
 </html>
