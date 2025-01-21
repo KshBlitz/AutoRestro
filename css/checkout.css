@@ -14,7 +14,7 @@ body {
   justify-content: space-between; /* Space between logo and buttons */
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1e3a5f; /* Dark blue background */
+  background-color: #A31D1D; /* Dark blue background */
   position: fixed;
   top: 0;
   left: 0;
@@ -93,7 +93,7 @@ main {
 
 /* Footer Styles */
 footer {
-  background-color: #1e3a5f;
+  background-color: #A31D1D;
   color: white;
   text-align: center;
   padding: 20px;

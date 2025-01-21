@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #1e3a5f; /* Dark blue background */
+  background-color: #A31D1D; /* Dark blue background */
   position: fixed;
   top: 0;
   left: 0;
@@ -47,7 +47,7 @@ body {
 
 .menu-section h2 {
   font-size: 2.5rem;
-  color: #1e3a5f;
+  color: #A31D1D;
   margin-bottom: 30px;
 }
 
@@ -67,7 +67,7 @@ body {
 
 .menu-category h3 {
   font-size: 2rem;
-  color: #1e3a5f;
+  color: #A31D1D;
   margin-bottom: 15px;
 }
 
@@ -120,7 +120,7 @@ body {
 
 /* Footer Styles */
 footer {
-  background-color: #1e3a5f;
+  background-color: #A31D1D;
   color: white;
   text-align: center;
   padding: 20px;
@@ -176,7 +176,7 @@ footer p {
 }
 
 .cart-notification button {
-  background-color: #00bcd4;
+  background-color: #A31D1D;
   color: white;
   padding: 5px 10px;
   border: none;
@@ -203,7 +203,7 @@ footer p {
 
 /* Add to Cart Button Styles */
 .primary-btn {
-  background-color: #1e3a5f; /* Dark blue */
+  background-color: #D84040; /* Dark blue */
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -216,7 +216,7 @@ footer p {
 }
 
 .primary-btn:hover {
-  background-color: #4f6d8a; /* Lighter blue */
+  background-color: #A31D1D; /* Lighter blue */
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
