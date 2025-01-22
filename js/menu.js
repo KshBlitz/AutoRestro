@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
           image: 'images/paneer-butter-masala.jpg', // Replace with your image path
         },
         {
-          title: 'Lamb Rogan Josh',
+          title: 'Chicken Ramen',
           price: '₹1,499',
           description: 'A fragrant and flavorful curry made with tender lamb pieces, simmered in a spicy, aromatic sauce of yogurt, tomatoes, and herbs.',
           image: 'images/lamb-rogan-josh.jpg', // Replace with your image path
